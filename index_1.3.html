@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>1_1</title>
+    </head>
+    <script>
+            function webdisplay(){
+            var site = document.getElementById('select').value;
+            document.getElementById('123').src = site;
+            }
+    </script>
+
+    <body>
+        <center><h1>My First Sub-Window</h1></center>
+        <center>
+        <select id="select">
+            <option value="https://www.google.com/webhp?igu=1">Google</option>
+            <option value="https://www.wikipedia.org">wikipedia</option>
+            <option value="https://www.hbo.com/">HBO</option>
+        </select> 
+        </center>
+        <center>
+        <input type="button" name="Go" onclick="webdisplay()" value="Go">
+        </center>
+        <center>
+        <iframe id="123" src="" height=60% width=40%></iframe>
+        </center>
+    </body>
+</html>

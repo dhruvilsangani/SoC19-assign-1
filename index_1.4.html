@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>1_1</title>
+    <script>
+            function webdisplay(){
+            var site = document.getElementById('website').value;
+            document.getElementById('123').src = site;
+            }
+    </script>
+    </head>
+
+    <body>
+        <center>enter URL below</center>
+        <center>
+        <input type="text" name="website" id='website'>
+        <input type="button" name="Go" onclick="webdisplay()" value="Go">
+
+        
+        </center>
+         
+        <center>
+        <iframe id="123" src="https://www.wikipedia.org" height=60% width=40%></iframe>
+        </center>
+
+
+    </body>
+</html>

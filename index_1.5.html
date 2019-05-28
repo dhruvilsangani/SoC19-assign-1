@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>resizing browser window</title>
+    </head>
+
+    <script>
+        function enter_size(){
+            var height=document.getElementById('height').value;
+            var width=document.getElementById('width').value;
+            document.getElementById('123').height = height;
+            document.getElementById('123').width = width;
+        }
+    </script>
+
+    <body>
+        <center>
+            
+        height: <input type="text" name="height" id='height'><br>
+        width: <input type="text" name="width"  id='width'><br>
+        <input type="button" name="Go" value="Go" onclick="enter_size()">
+        </center>
+        <center>
+        <iframe id='123' src="https://www.wikipedia.org" height="75%" width="75%"></iframe>
+        </center>
+    </body>
+
+
+
+</html>
